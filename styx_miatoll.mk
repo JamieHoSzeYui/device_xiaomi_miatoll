@@ -13,16 +13,17 @@
 # limitations under the License.
 
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/styx/config/common.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := lineage_miatoll
+PRODUCT_NAME := styx_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 9S 
 PRODUCT_MANUFACTURER := Xiaomi
+STYX_BUILD_VARIANT := OFFICIAL
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 IS_PHONE := true
